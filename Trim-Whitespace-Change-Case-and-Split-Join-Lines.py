@@ -58,7 +58,7 @@ class TEXT_OT_trim_whitespaces(Operator):
 
     @classmethod
     def poll(cls, context):
-        return (context.space_data.text and context.area.type == 'TEXT_EDITOR')
+        return (context.area.type == 'TEXT_EDITOR' and context.space_data.text)
 
     def execute(self, context):
         st = context.space_data
@@ -115,7 +115,7 @@ class TEXT_OT_convert_case(Operator):
 
     @classmethod
     def poll(cls, context):
-        return (context.space_data.text and context.area.type == 'TEXT_EDITOR')
+        return (context.area.type == 'TEXT_EDITOR' and context.space_data.text)
 
     def execute(self, context):
         st = context.space_data
@@ -170,7 +170,7 @@ class TEXT_OT_split_join_lines(Operator):
 
     @classmethod
     def poll(cls, context):
-        return (context.space_data.text and context.area.type == 'TEXT_EDITOR')
+        return (context.area.type == 'TEXT_EDITOR' and context.space_data.text)
 
     def execute(self, context):
         st = context.space_data
