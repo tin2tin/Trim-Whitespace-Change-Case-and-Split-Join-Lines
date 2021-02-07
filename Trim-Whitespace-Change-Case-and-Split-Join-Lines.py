@@ -21,7 +21,7 @@
 bl_info = {
     "name": "Trim Whitespace, Change Case and Split/Join Lines",
     "author": "Tintwotin",
-    "version": (0, 2),
+    "version": (0, 2, 1),
     "blender": (2, 80, 0),
     "location": "Text Editor Format Menu",
     "description": "Adds Trim Whitespace, Change Case and Split/Join Lines functions to the Text Editor",
